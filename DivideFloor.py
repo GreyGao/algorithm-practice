@@ -7,10 +7,10 @@ def devideFloor(width, height):
 
     i = 1
     while longer - short * i > 0:
-     i = i+1
+      i = i+1
 
     remain = longer - short * (i - 1)
-    devideFloor(remain, short)  
+    return devideFloor(remain, short)  
 
 
 print devideFloor(1680, 640)
